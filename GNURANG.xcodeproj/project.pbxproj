@@ -8,25 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		96A7BF5629B5CB53006D3552 /* GNURANG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF5529B5CB53006D3552 /* GNURANG.swift */; };
-		96A7BF5829B5CB53006D3552 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF5729B5CB53006D3552 /* ContentView.swift */; };
+		96A7BF5829B5CB53006D3552 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF5729B5CB53006D3552 /* SplashView.swift */; };
 		96A7BF5A29B5CB55006D3552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A7BF5929B5CB55006D3552 /* Assets.xcassets */; };
 		96A7BF5D29B5CB55006D3552 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A7BF5C29B5CB55006D3552 /* Preview Assets.xcassets */; };
 		96A7BF6429B5CCDE006D3552 /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF6329B5CCDE006D3552 /* SplashScreen.swift */; };
 		96A7BF6629B5CCFF006D3552 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF6529B5CCFF006D3552 /* MainTabView.swift */; };
 		96A7BF6829B5D80B006D3552 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF6729B5D80B006D3552 /* MainView.swift */; };
 		96A7BF6A29B609B0006D3552 /* Practice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF6929B609B0006D3552 /* Practice.swift */; };
+		96A7BF6D29B63E51006D3552 /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF6C29B63E50006D3552 /* Widgets.swift */; };
+		96A7BF6F29B6411D006D3552 /* IDCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF6E29B6411D006D3552 /* IDCardView.swift */; };
+		96A7BF7129B64165006D3552 /* TimeTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF7029B64165006D3552 /* TimeTableView.swift */; };
+		96A7BF7329B6418A006D3552 /* GNUMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF7229B6418A006D3552 /* GNUMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		96A7BF5229B5CB53006D3552 /* GNURANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNURANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A7BF5529B5CB53006D3552 /* GNURANG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNURANG.swift; sourceTree = "<group>"; };
-		96A7BF5729B5CB53006D3552 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		96A7BF5729B5CB53006D3552 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		96A7BF5929B5CB55006D3552 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96A7BF5C29B5CB55006D3552 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		96A7BF6329B5CCDE006D3552 /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		96A7BF6529B5CCFF006D3552 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		96A7BF6729B5D80B006D3552 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		96A7BF6929B609B0006D3552 /* Practice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice.swift; sourceTree = "<group>"; };
+		96A7BF6C29B63E50006D3552 /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		96A7BF6E29B6411D006D3552 /* IDCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDCardView.swift; sourceTree = "<group>"; };
+		96A7BF7029B64165006D3552 /* TimeTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTableView.swift; sourceTree = "<group>"; };
+		96A7BF7229B6418A006D3552 /* GNUMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNUMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,7 +51,6 @@
 		96A7BF4929B5CB53006D3552 = {
 			isa = PBXGroup;
 			children = (
-				96A7BF6929B609B0006D3552 /* Practice.swift */,
 				96A7BF5429B5CB53006D3552 /* GNURANG */,
 				96A7BF5329B5CB53006D3552 /* Products */,
 			);
@@ -63,7 +70,12 @@
 				96A7BF5529B5CB53006D3552 /* GNURANG.swift */,
 				96A7BF6529B5CCFF006D3552 /* MainTabView.swift */,
 				96A7BF6729B5D80B006D3552 /* MainView.swift */,
-				96A7BF5729B5CB53006D3552 /* ContentView.swift */,
+				96A7BF7229B6418A006D3552 /* GNUMapView.swift */,
+				96A7BF7029B64165006D3552 /* TimeTableView.swift */,
+				96A7BF6E29B6411D006D3552 /* IDCardView.swift */,
+				96A7BF5729B5CB53006D3552 /* SplashView.swift */,
+				96A7BF6C29B63E50006D3552 /* Widgets.swift */,
+				96A7BF6929B609B0006D3552 /* Practice.swift */,
 				96A7BF5929B5CB55006D3552 /* Assets.xcassets */,
 				96A7BF5B29B5CB55006D3552 /* Preview Content */,
 			);
@@ -151,10 +163,14 @@
 			files = (
 				96A7BF6A29B609B0006D3552 /* Practice.swift in Sources */,
 				96A7BF6429B5CCDE006D3552 /* SplashScreen.swift in Sources */,
-				96A7BF5829B5CB53006D3552 /* ContentView.swift in Sources */,
+				96A7BF5829B5CB53006D3552 /* SplashView.swift in Sources */,
 				96A7BF5629B5CB53006D3552 /* GNURANG.swift in Sources */,
 				96A7BF6829B5D80B006D3552 /* MainView.swift in Sources */,
+				96A7BF6F29B6411D006D3552 /* IDCardView.swift in Sources */,
+				96A7BF7329B6418A006D3552 /* GNUMapView.swift in Sources */,
+				96A7BF6D29B63E51006D3552 /* Widgets.swift in Sources */,
 				96A7BF6629B5CCFF006D3552 /* MainTabView.swift in Sources */,
+				96A7BF7129B64165006D3552 /* TimeTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,17 +296,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GNURANG/Preview Content\"";
 				DEVELOPMENT_TEAM = KRT7LJ7RSM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "지누랑!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,6 +317,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i1hwan.GNURANG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,17 +329,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"GNURANG/Preview Content\"";
 				DEVELOPMENT_TEAM = KRT7LJ7RSM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "지누랑!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +350,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.i1hwan.GNURANG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

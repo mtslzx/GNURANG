@@ -10,14 +10,14 @@ import SwiftUI
 struct MainTabView: View {
     var body: some View {
         TabView {
-            Text("지누랑! 메인뷰")
+            MainView()
                 .tabItem {
                     Image(systemName: "doc.text.image")
                         .renderingMode(.template)
                         .foregroundColor(Color("311C"))
                     Text("지누랑!")
                 }
-            Text("교내지도 뷰")
+            GNUMapView()
                 .tabItem {
                     Image(systemName: "map")
                     Text("교내지도")
@@ -27,12 +27,12 @@ struct MainTabView: View {
                     Image(systemName: "clock")
                     Text("출석체크")
                 }
-            Text("시간표 뷰")
+            TimeTableView()
                 .tabItem {
                     Image(systemName: "questionmark.app.dashed")
                     Text("시간표?")
                 }
-            Text("마이페이지 뷰")
+            IDCardView()
                 .tabItem {
                     Image(systemName: "person.text.rectangle")
                         .foregroundColor(Color("311C"))
