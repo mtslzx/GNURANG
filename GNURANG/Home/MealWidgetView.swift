@@ -1,5 +1,5 @@
 //
-//  NoticeWidgetView.swift
+//  MealWidgetView.swift
 //  GNURANG
 //
 //  Created by 하일환 on 2023/03/17.
@@ -7,15 +7,8 @@
 
 import SwiftUI
 
-struct NoticeWidgetView: View {
-    
-    enum Notice: String, CaseIterable, Identifiable {
-        case 기관, 학사, 장학, 학술, 채용
-        var id: Self { self }
-    }
-    
-    
-    @State private var selectedNotice: Notice = .기관
+struct MealWidgetView: View {
+    @State private var selectedCafeteria: CafeteriaName = .중앙1식당
     
     var body: some View {
         Group {  // GNU NOTICE Group
@@ -30,7 +23,7 @@ struct NoticeWidgetView: View {
                                 .fontWeight(.heavy)
                                 .font(.title3)
                                 .foregroundColor(.accentColor)
-                            Text("NOTICE")
+                            Text("MEAL")
                                 .fontWeight(.heavy)
                                 .font(.title3)
                             Rectangle()
@@ -45,102 +38,57 @@ struct NoticeWidgetView: View {
                                     .fontWeight(.heavy)
                             }
                         }
-
-                        HStack {  // Category
-                            //                                    Picker(selection: $selectedNotice) {
-                            //                                        <#code#>
-                            //                                    } label: {
-                            //                                        <#code#>
-                            //                                    }
-                            // Spacer()
-                            Button {  // = 기관 버튼 =
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                                    selectedNotice = .기관
+                        
+                        HStack {
+                            ForEach(CafeteriaList) { item in  // Make it Flexible
+                                Button {
+                                    selectedCafeteria = item.name
+                                    // withAnimation(.easeInOut(duration: 0.3)) {
+                                    //     selectedCafeteria = item.name
+                                    // }
+                                } label: {
+                                    Text("\(item.text)")
+                                        .font(.callout)
+                                        .foregroundColor(selectedCafeteria == item.name ? .accentColor : .primary)
+                                        .fontWeight(selectedCafeteria == item.name ? .black : .regular)
+                                        .overlay {
+                                            if selectedCafeteria == item.name {
+                                                withAnimation(.easeInOut(duration: 3)) {
+                                                    Rectangle()  // Indicator Shape
+                                                        .fill(Color("AccentColor"))
+                                                        .frame(width: CGFloat(item.text.count * 10), height: 2.6)
+                                                        .cornerRadius(5)
+                                                        .offset(y:6)
+                                                        .frame(maxHeight: .infinity, alignment: .bottom)
+                                                }
+                                            }
+                                            
+                                        }
                                 }
-                            } label: {
-                                Text("기관")
-                                    .font(.callout)
-                                    .foregroundColor(selectedNotice == .기관 ? .accentColor : .primary)
-                                    .fontWeight(selectedNotice == .기관 ? .black : .regular)
+                                Spacer()
                             }
-                            Spacer()  // 힘의 균형을 맞춰보자.
-                            Button {  // = 학사 버튼 =
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.65)) {
-                                    selectedNotice = .학사
-                                }
-                            } label: {
-                                Text("학사")
-                                    .font(.callout)
-                                    .foregroundColor(selectedNotice == .학사 ? .accentColor : .primary)
-                                    .fontWeight(selectedNotice == .학사 ? .black : .regular)
-                            }
-                            Spacer()  // 힘의 균형을 맞춰보자.
-                            .foregroundColor(.primary)
-                            Button {  // = 장학 버튼 =
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.625)) {
-                                    selectedNotice = .장학
-                                }
-                            } label: {
-                                Text("장학")
-                                    .font(.callout)
-                                    .foregroundColor(selectedNotice == .장학 ? .accentColor : .primary)
-                                    .fontWeight(selectedNotice == .장학 ? .black : .regular)
-                            }
-                            Spacer()  // 힘의 균형을 맞춰보자.
-                            Button {  // = 학술 버튼 =
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.65)) {
-                                    selectedNotice = .학술
-                                }
-                            } label: {
-                                Text("학술")
-                                    .font(.callout)
-                                    .foregroundColor(selectedNotice == .학술 ? .accentColor : .primary)
-                                    .fontWeight(selectedNotice == .학술 ? .black : .regular)
-                            }
-                            Spacer()  // 힘의 균형을 맞춰보자.
-                            Button {  // = 채용 버튼 =
-                                withAnimation(.spring(response: 0.3, dampingFraction: 0.7)) {
-                                    selectedNotice = .채용
-                                }
-                            } label: {
-                                Text("채용")
-                                    .font(.callout)
-                                    .foregroundColor(selectedNotice == .채용 ? .accentColor : .primary)
-                                    .fontWeight(selectedNotice == .채용 ? .black : .regular)
-                            }
-                            // Spacer()  // 힘의 균형을 맞춰보자.
                         }
-                        .frame(width: 200)  // Category Selector Frame size
+                        // .frame(width: 200)  // Category Selector Frame size
                         .overlay {  // Category Indicator w. Animation
                             HStack {  // 막 만들다 보니깐 뭔가 작동하는게 만들어져 버렸다..!
-                                if selectedNotice == .채용 { Spacer() }
-                                if selectedNotice == .학사 {
-                                    Spacer()
-                                }
-                                if selectedNotice == .학술 {
-                                    Spacer()
-                                    Spacer()
-                                    Spacer()
-                                }
-
-                                Rectangle()  // Indicator Shape
-                                    .fill(Color("AccentColor"))
-                                    .frame(width: 28, height: 2.6)
-                                    .cornerRadius(5)
-                                    .offset(y:6)
-                                .frame(maxHeight: .infinity, alignment: .bottom)
-                                if selectedNotice == .학술 {
-                                    Spacer()
-                                }
-                                if selectedNotice == .학사 {
-                                    Spacer()
-                                    Spacer()
-                                    Spacer()
-                                }
-                                if selectedNotice == .기관 { Spacer() }
-                                // Spacer()
-                                // Spacer()
-                                // Spacer()
+                                // if selectedCafeteria == .중앙1식당 { Spacer() }
+                                // if selectedCafeteria == .아람관 {
+                                //     Spacer()
+                                // }
+                                // if selectedCafeteria == .교육문화1층식당 {
+                                //     Spacer()
+                                //     Spacer()
+                                //     Spacer()
+                                // }
+                                Spacer()
+                                // Rectangle()  // Indicator Shape
+                                //     .fill(Color("AccentColor"))
+                                //     .frame(width: 40, height: 2.6)
+                                //     .cornerRadius(5)
+                                //     .offset(y:6)
+                                // .frame(maxHeight: .infinity, alignment: .bottom)
+                                Spacer()
+                                Spacer()
                             }
                             // .border(.red)  // 아웃라인 확인용
                         }
@@ -233,8 +181,8 @@ struct NoticeWidgetView: View {
     }
 }
 
-struct NoticeWidgetView_Previews: PreviewProvider {
+struct MealWidgetView_Previews: PreviewProvider {
     static var previews: some View {
-        NoticeWidgetView()
+        MealWidgetView()
     }
 }
