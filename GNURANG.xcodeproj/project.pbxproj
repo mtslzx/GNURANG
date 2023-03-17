@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9608532529C4816A0053815E /* NoticeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9608532429C4816A0053815E /* NoticeWidgetView.swift */; };
 		96A7BF5629B5CB53006D3552 /* GNURANG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF5529B5CB53006D3552 /* GNURANG.swift */; };
 		96A7BF5829B5CB53006D3552 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF5729B5CB53006D3552 /* SplashView.swift */; };
 		96A7BF5A29B5CB55006D3552 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96A7BF5929B5CB55006D3552 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9608532429C4816A0053815E /* NoticeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeWidgetView.swift; sourceTree = "<group>"; };
 		96A7BF5229B5CB53006D3552 /* GNURANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNURANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96A7BF5529B5CB53006D3552 /* GNURANG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNURANG.swift; sourceTree = "<group>"; };
 		96A7BF5729B5CB53006D3552 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -48,6 +50,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9608532329C481370053815E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				96A7BF6729B5D80B006D3552 /* MainView.swift */,
+				9608532429C4816A0053815E /* NoticeWidgetView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		96A7BF4929B5CB53006D3552 = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +80,7 @@
 			children = (
 				96A7BF5529B5CB53006D3552 /* GNURANG.swift */,
 				96A7BF6529B5CCFF006D3552 /* MainTabView.swift */,
-				96A7BF6729B5D80B006D3552 /* MainView.swift */,
+				9608532329C481370053815E /* Home */,
 				96A7BF7229B6418A006D3552 /* GNUMapView.swift */,
 				96A7BF7029B64165006D3552 /* TimeTableView.swift */,
 				96A7BF6E29B6411D006D3552 /* IDCardView.swift */,
@@ -169,6 +180,7 @@
 				96A7BF6F29B6411D006D3552 /* IDCardView.swift in Sources */,
 				96A7BF7329B6418A006D3552 /* GNUMapView.swift in Sources */,
 				96A7BF6D29B63E51006D3552 /* Widgets.swift in Sources */,
+				9608532529C4816A0053815E /* NoticeWidgetView.swift in Sources */,
 				96A7BF6629B5CCFF006D3552 /* MainTabView.swift in Sources */,
 				96A7BF7129B64165006D3552 /* TimeTableView.swift in Sources */,
 			);
@@ -308,6 +320,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,6 +354,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -38,6 +38,10 @@ struct MainTabView: View {
                         .foregroundColor(Color("311C"))
                     Text("{name}")
                 }
+            // paytestView()
+            //     .tabItem {
+            //         Text("WOW")
+            //     }
         }.toolbarBackground(.red, for: .automatic)
     }
 }

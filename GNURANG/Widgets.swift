@@ -13,6 +13,24 @@ struct Widgets: View {
     }
 }
 
+struct WidgetBase: View {
+    // WhiteBG, Storke Only
+    var body: some View {
+        Group {
+            ZStack {
+                RoundedRectangle(cornerRadius: 10)
+                    .strokeBorder(Color("ColorStorke"), lineWidth: 1)
+                    .background(RoundedRectangle(cornerRadius: 10).fill(Color("ColorWhite")))
+                    .frame(height: 100)  // <- Set Widget Height
+                    .padding(.horizontal, 16)
+                    .padding(.vertical, 10)
+            }
+        }
+    }
+}
+
+
+
 struct WidgetMeal: View {
     
     let widgetPadding: CGFloat = 20
