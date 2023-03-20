@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9608532529C4816A0053815E /* NoticeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9608532429C4816A0053815E /* NoticeWidgetView.swift */; };
+		963D4D2629C886660036B05B /* Practice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D4D2529C886650036B05B /* Practice2.swift */; };
+		963D4D2829C8B9E60036B05B /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D4D2729C8B9E60036B05B /* DeveloperView.swift */; };
 		965BBADF29C4A0B900DE1CF2 /* MealWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BBADE29C4A0B900DE1CF2 /* MealWidgetView.swift */; };
 		965BBAE129C4A37C00DE1CF2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BBAE029C4A37C00DE1CF2 /* Tab.swift */; };
 		96A7BF5629B5CB53006D3552 /* GNURANG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A7BF5529B5CB53006D3552 /* GNURANG.swift */; };
@@ -26,6 +28,8 @@
 
 /* Begin PBXFileReference section */
 		9608532429C4816A0053815E /* NoticeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeWidgetView.swift; sourceTree = "<group>"; };
+		963D4D2529C886650036B05B /* Practice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice2.swift; sourceTree = "<group>"; };
+		963D4D2729C8B9E60036B05B /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
 		965BBADE29C4A0B900DE1CF2 /* MealWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealWidgetView.swift; sourceTree = "<group>"; };
 		965BBAE029C4A37C00DE1CF2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		96A7BF5229B5CB53006D3552 /* GNURANG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GNURANG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,7 +96,9 @@
 				96A7BF6E29B6411D006D3552 /* IDCardView.swift */,
 				96A7BF5729B5CB53006D3552 /* SplashView.swift */,
 				96A7BF6C29B63E50006D3552 /* Widgets.swift */,
+				963D4D2729C8B9E60036B05B /* DeveloperView.swift */,
 				96A7BF6929B609B0006D3552 /* Practice.swift */,
+				963D4D2529C886650036B05B /* Practice2.swift */,
 				96A7BF5929B5CB55006D3552 /* Assets.xcassets */,
 				96A7BF5B29B5CB55006D3552 /* Preview Content */,
 			);
@@ -187,8 +193,10 @@
 				96A7BF7329B6418A006D3552 /* GNUMapView.swift in Sources */,
 				965BBAE129C4A37C00DE1CF2 /* Tab.swift in Sources */,
 				96A7BF6D29B63E51006D3552 /* Widgets.swift in Sources */,
+				963D4D2629C886660036B05B /* Practice2.swift in Sources */,
 				9608532529C4816A0053815E /* NoticeWidgetView.swift in Sources */,
 				965BBADF29C4A0B900DE1CF2 /* MealWidgetView.swift in Sources */,
+				963D4D2829C8B9E60036B05B /* DeveloperView.swift in Sources */,
 				96A7BF6629B5CCFF006D3552 /* MainTabView.swift in Sources */,
 				96A7BF7129B64165006D3552 /* TimeTableView.swift in Sources */,
 			);

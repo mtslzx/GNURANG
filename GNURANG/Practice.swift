@@ -181,6 +181,40 @@ struct MyView: View {
 // //                     }
 
 
+// struct Test1View: View {
+//     @State var items = ["Apple", "Banana", "Cherry"]
+//     @State var selectedItem: String?
+//
+//     var body: some View {
+//         NavigationView {
+//             ScrollView {
+//                 LazyVStack {
+//                     ForEach(items) { item in
+//                         Button(action: { selectedItem = item }) {
+//                             Text(item)
+//                         }
+//                         .buttonStyle(.plain)
+//                     }
+//                 }
+//             }
+//             .background(
+//                 NavigationLink(destination: DetailView(item: $selectedItem), tag: selectedItem ?? "", selection: $selectedItem) {
+//                     EmptyView()
+//                 }
+//             )
+//         }
+//     }
+// }
+
+// struct DetailView: View {
+//     @Binding var item: String
+//
+//     var body: some View {
+//         Text("You selected \\(item)")
+//     }
+// }
+
+
 struct Practice_Previews: PreviewProvider {
     static var previews: some View {
 //        MyView()
