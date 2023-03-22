@@ -191,7 +191,7 @@ struct IDCardView: View {
                         }
                         
                         // ID Card Pass Link
-                        NavigationLink(destination: GNUMapView()) {
+                        NavigationLink(destination: PassView()) {
                             Group {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 10)
@@ -220,31 +220,96 @@ struct IDCardView: View {
                         
                         
                         
+                        
                         // Settings
                         Button("WLW") {
                             print("H")
                         }
                         
-                        ForEach(0..<5){ idx in
+                        Group {  // Navigation Button Group
                             LazyVStack(alignment:.leading) {
-                                Button {
-                                    print("button")
+                                Button {  // Navigation Button - Go setting
+                                    print("navigation button")
                                 } label: {
                                     ZStack {
-                                        Rectangle()
-                                            .foregroundColor(.white)
-                                            .cornerRadius(10)
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .strokeBorder(Color("ColorStorke"), lineWidth: 1)
+                                            .background(RoundedRectangle(cornerRadius: 10).fill(Color("ColorWhite")))
                                         HStack {
-                                            Text("\(idx)")
-                                                
+                                            Text("Setting")
                                             Divider()
                                             Spacer()
                                             Image(systemName: "chevron.right")
-                                                // .font(.system(size: 30))
                                         }
-                                        .padding(12)
+                                        .padding(.horizontal, 16)
+                                        .padding(.vertical, 12)
                                     }
-                                    
+                                }
+                                Button {  // Navigation Button - Account
+                                    print("navigation Account button")
+                                } label: {
+                                    ZStack {
+                                        RoundedRectangle(cornerRadius: 10)
+                                            .strokeBorder(Color("ColorStorke"), lineWidth: 1)
+                                            .background(RoundedRectangle(cornerRadius: 10).fill(Color("ColorWhite")))
+                                        HStack {
+                                            Image(systemName: "person.fill")
+                                                .font(.system(size:18))  // icon size fix
+                                            Divider()
+                                            Text("계정")
+                                            Spacer()
+                                            Image(systemName: "chevron.right")
+                                        }
+                                        .padding(.horizontal, 16)
+                                        .padding(.vertical, 12)
+                                    }
+                                }
+                                ZStack {  // Setting Shortcut Section
+                                    RoundedRectangle(cornerRadius: 10)  // Background Shape
+                                        .strokeBorder(Color("ColorStorke"), lineWidth: 1)
+                                        .background(RoundedRectangle(cornerRadius: 10).fill(Color("ColorWhite")))
+                                    VStack {  // Setting Shortcuts
+                                        /// When listing settings shortcuts, be sure to insert Divider() between items.
+                                        /// Note that the first and last items have different .padding to balance the spacing between them.
+                                        HStack(alignment: .center) {  // First Item - Lang
+                                            Image(systemName: "bell.fill")
+                                                .font(.system(size:18))  // icon size fix
+                                            Divider()
+                                            Text("알림")
+                                            Spacer()
+                                            Image(systemName: "chevron.right")
+                                        }
+                                        .padding(.bottom, 2)
+                                        Divider()
+                                            .padding(.vertical, 2)
+                                        Button {
+                                            print("WL")
+                                        } label: {
+                                            HStack(alignment: .center) {
+                                                Image(systemName: "textformat")
+                                                    .font(.system(size:18))  // icon size fix
+                                                Divider()
+                                                Text("언어")
+                                                Spacer()
+                                                Image(systemName: "chevron.right")
+                                            }
+                                        }
+                                        .padding(.vertical, 2)
+                                        Divider()
+                                            .padding(.vertical, 2)
+                                        NavigationLink(destination: DeveloperView()) {
+                                            HStack(alignment: .center) {
+                                                Image(systemName: "swift")
+                                                    .font(.system(size:18))  // icon size fix
+                                                Divider()
+                                                Text("개발자")
+                                                Spacer()
+                                                Image(systemName: "chevron.right")
+                                            }
+                                        }
+                                        .padding(.top, 2)
+                                    }
+                                    .padding(16)
                                 }
                             }
                         }

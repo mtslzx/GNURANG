@@ -18,94 +18,13 @@ struct DeveloperView: View {
         NavigationView {
             ScrollView {
                 ZStack {
-                    
-                    
+
                     VStack {
                         
-                        
-                        VStack {
-                            ForEach(1..<40){idx in
+                        VStack {  // Background Length
+                            ForEach(1..<40){ idx in
                                 Text("\(idx)")
                             }
-                        }
-                        Text("HELLO")
-                        
-                        // Profile ID
-                        Group {
-                            ZStack {
-                                // RoundedRectangle(cornerRadius: 10)  // Background
-                                
-                                RoundedRectangle(cornerRadius: 10)  // Storke
-                                    .strokeBorder(Color("ColorStorke"), lineWidth: 1)
-                                    .background {
-                                        ZStack {
-                                            AngularGradient(gradient: Gradient(colors: [.red, .pink, .cyan, .yellow, .red]), center: .center, angle: .degrees(isAnimating ? 120 : 60))
-                                            LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0), Color.white.opacity(1)]), startPoint: .bottom, endPoint: .top)
-                                            Circle()
-                                                .frame(width: 250, height: 250)
-                                                .offset(x: isAnimating ? 100 : 150, y: isAnimating ? -100 : -200)
-                                                .foregroundColor(Color("311C").opacity(0.6))
-                                                .blur(radius: 8)
-                                            Circle()
-                                                .frame(width: 400, height: 400)
-                                                .offset(x: isAnimating ? -100 : -150, y: isAnimating ? -100 : -200)
-                                                .foregroundColor(Color.blue.opacity(0.3))
-                                                .blur(radius: 12)
-                                            Circle()
-                                                .frame(width: 250, height: 230)
-                                                .offset(x: isAnimating ? 0 : 30, y: isAnimating ? 100 : 150)
-                                                .foregroundColor(Color.cyan.opacity(0.3))
-                                                .blur(radius: 8)
-                                        }
-                                        .hueRotation(.degrees(isAnimating ? 30 : 0))
-                                        .opacity(0.8)
-                                        .blur(radius: 10)
-                                        // .ignoresSafeArea()
-                                    }
-                                    .onAppear {
-                                        withAnimation(.easeInOut(duration: 10).repeatForever(autoreverses: true)) {
-                                            isAnimating.toggle()
-                                        }
-                                    }
-                                
-                                
-                            
-                                    // .background(Gradient(colors: [Color("AccentColor"), Color("DropShadow")]))
-                                    .cornerRadius(20)
-                                Group {
-                                    VStack {
-                                        HStack {
-                                            VStack(alignment: .leading, spacing: 4) {
-                                                Text("컴퓨터과학과 컴퓨터과학부")
-                                                    .font(.headline)
-                                                Text("하일환")
-                                                    .font(.title)
-                                                    .fontWeight(.bold)
-                                            }
-                                            Spacer()
-                                        }
-                                        Spacer()
-                                        HStack {
-                                            Image("GNU_simple")
-                                                .resizable()
-                                                .aspectRatio(contentMode: .fit)
-                                                .frame(width:80)
-                                            Spacer()
-                                            Text("2022010844")
-                                                .font(.callout)
-                                                .fontWeight(.semibold)
-                                        }
-                                    }
-                                }
-                                .foregroundColor(Color("ColorWhite"))
-                                .padding(20)
-                                
-                            }
-                            .frame(height: 210)  // <- Set Widget Height
-                            .padding(.horizontal, 16)  // Safe Margin
-                            .padding(.top, 16)
-                            
-
                         }
                         
                         // ID Card Pass Link
@@ -173,7 +92,7 @@ struct DeveloperView: View {
                     
                     Group {
                         ZStack {
-                            ZStack {
+                            ZStack {  // Background ==========
                                 AngularGradient(gradient: Gradient(colors: [.red, .pink, .cyan, .yellow, .red]), center: .center, angle: .degrees(isAnimating ? 120 : 60))
                                 LinearGradient(gradient: Gradient(colors: [Color.white.opacity(0), Color.white.opacity(1)]), startPoint: .bottom, endPoint: .top)
                                 Circle()
@@ -200,9 +119,37 @@ struct DeveloperView: View {
                             .border(.red)
 
                             
-                            VStack() {
-                                Spacer()
-                                ZStack {
+                            VStack() {  // Content VStack ================
+                                
+                                
+                                VStack {
+                                    Image("GNU_default")
+                                        .resizable()
+                                        .aspectRatio(contentMode: .fit)
+                                        .frame(width: 90)
+                                    
+                                        
+                                    Text("지누랑!")
+                                        .font(.largeTitle)
+                                        .fontWeight(.black)
+                                        .foregroundStyle(.regularMaterial)
+                                        .colorScheme(.dark)
+                                }
+                                .padding(20)  // Padding의 적용 순서를 잘 생각해보자
+                                .frame(width: 160)  // Frame의 적용 순서도!
+                                .background(.ultraThinMaterial)  // 너도!
+                                .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
+                                .overlay(RoundedRectangle(cornerRadius: 20, style: .continuous).stroke(lineWidth: 1.5).fill(Color.white))
+                                .cornerRadius(20)  // +!
+                                
+                                
+                                
+                                Text("2023-03-01")
+                                
+                                Text("2023-03-01")
+                                
+                                
+                                ZStack {  // ID Card ======================================================================
                                     RoundedRectangle(cornerRadius:20)  // 몰랐는데 Background에 Thin같은 머터리얼을 적용하면 이렇게 노가다 안해도 되더라..
                                         .foregroundColor(.white)
                                         .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
@@ -212,7 +159,7 @@ struct DeveloperView: View {
                                         .blendMode(.softLight).opacity(0.8)
                                     Group {
                                         VStack {
-                                            HStack {
+                                            HStack(alignment:.top) {
                                                 VStack(alignment: .leading, spacing: 4) {
                                                     Text("컴퓨터과학과 컴퓨터과학부")
                                                         .font(.headline)
@@ -222,6 +169,12 @@ struct DeveloperView: View {
                                                 }
                                                 .shadow(color: Color.black.opacity(0.3), radius: 2, x: 0, y: 0)
                                                 Spacer()
+                                                Link(destination: URL(string: "https://github.com/mtslzx")!) {
+                                                    Image(systemName: "link.circle")
+                                                        .font(.system(size:32))
+                                                }
+                                                
+                                            
                                             }
                                             Spacer()
                                             HStack {
@@ -232,7 +185,7 @@ struct DeveloperView: View {
                                                     .frame(width:80)
                                                     
                                                 Spacer()
-                                                Text("2022010844")
+                                                Text("Developer")
                                                     .font(.callout)
                                                     .fontWeight(.semibold)
                                                     .shadow(color: Color.black.opacity(0.3), radius: 16, x: 0, y: 10)
@@ -241,13 +194,13 @@ struct DeveloperView: View {
                                     }
                                     .foregroundColor(Color("ColorWhite"))
                                     .padding(20)
-                                }
+                                }  // ID Card END ======================================================================
                                 .frame(height:200, alignment:.top)
                                 // .frame(maxWidth: .infinity, maxHeight: 210)
                                 .padding(.horizontal, 16)  // Safe Margin
                             .padding(.vertical, 16)
                                 
-                            }
+                            }  // Content VStack END
                             .border(.green)
                         }
                         .border(.blue)

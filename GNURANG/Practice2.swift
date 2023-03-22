@@ -71,14 +71,15 @@ struct Practice2: View {
                 
                 
                 VStack() {
-                    Spacer()
+                    // Spacer()
                     Text("Developer")
                     ForEach(0..<20) { idx in
                         Text("\(idx)")
                     }
                     
                     
-                    ZStack {
+                    
+                    ZStack {  // ID Card
                         RoundedRectangle(cornerRadius:20)  // 몰랐는데 Background에 Thin같은 머터리얼을 적용하면 이렇게 노가다 안해도 되더라..
                             .foregroundColor(.white)
                             .mask(RoundedRectangle(cornerRadius: 20, style: .continuous))
@@ -108,7 +109,7 @@ struct Practice2: View {
                                         .frame(width:80)
                                     
                                     Spacer()
-                                    Text("2022010844")
+                                    Text("Developer")
                                         .font(.callout)
                                         .fontWeight(.semibold)
                                         .shadow(color: Color.black.opacity(0.3), radius: 16, x: 0, y: 10)
@@ -122,6 +123,12 @@ struct Practice2: View {
                     // .frame(maxWidth: .infinity, maxHeight: 210)
                     .padding(.horizontal, 16)  // Safe Margin
                     .padding(.vertical, 16)
+                    
+                    ForEach(0..<10) { idx in
+                        Text("\(idx)")
+                    }
+                    
+                    Spacer()
                     
                 }
                 .border(.green)
