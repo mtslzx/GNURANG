@@ -53,6 +53,13 @@ struct GNUMapView: View {
             
             Text("MapSearchSheet")
                 .padding(.top)
+            
+            Button {
+                isSheetShowing = false
+            } label: {
+                Text("목적지 선택 혹은 닫기를 누를 경우 지도로 돌아가기")
+            }
+
             Spacer()
         }
         .presentationDetents([.medium, .large])  // This set Sheet's Height

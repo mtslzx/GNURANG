@@ -16,9 +16,9 @@ struct MainView: View {
             //            Rectangle().foregroundColor(Color(UIColor.white)).frame(height: 10)
             //            Spacer()
             VStack(alignment: .leading, spacing: 10) {
-                ScrollView(showsIndicators: false) {  // Scrollable
+                ScrollView(showsIndicators: true) {  // Scrollable
                     Group {  // GNU BANNER Group
-                        ScrollView(.horizontal) {
+                        ScrollView(.horizontal, showsIndicators: false) {
                             HStack {
                                 ForEach(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
                                     Image("BannerTest")

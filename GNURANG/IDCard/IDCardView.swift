@@ -136,7 +136,7 @@ struct IDCardView: View {
                                                     Image("GNU_default")
                                                         .resizable()
                                                         .scaledToFit()
-                                                        .opacity(0.7)
+                                                        .opacity(0.8)
                                                         .overlay{
                                                             Image("GNU_default")
                                                                 
@@ -370,8 +370,8 @@ struct IDCardView: View {
                                         Text("Apple Wallet에 학생증 추가하기")
                                             .font(.headline)
                                         Spacer()
-                                        Image(systemName: "chevron.right")
-                                            .font(.system(size: 30))
+                                        Image(systemName: "plus.circle")
+                                            .font(.system(size: 22))
                                     }
                                     .padding(.leading, 5)
                                     .padding(.trailing, 20.0)
@@ -447,9 +447,7 @@ struct IDCardView: View {
                                         .padding(.bottom, 2)
                                         Divider()
                                             .padding(.vertical, 2)
-                                        Button {
-                                            print("WL")
-                                        } label: {
+                                        NavigationLink(destination: LanguageSelectorView()) {
                                             HStack(alignment: .center) {
                                                 Image(systemName: "textformat")
                                                     .font(.system(size:18))  // icon size fix

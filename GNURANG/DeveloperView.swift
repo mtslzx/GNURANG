@@ -22,6 +22,11 @@ struct DeveloperView: View {
                     VStack {
                         
                         VStack {  // Background Length
+                            Image("GNU_default")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .frame(width: 120)
+                                .padding(.top, 20)
                             ForEach(1..<40){ idx in
                                 Text("\(idx)")
                             }
@@ -117,6 +122,7 @@ struct DeveloperView: View {
                             // .frame(maxWidth: .infinity, maxHeight: 210)
                             // .frame(height:500)
                             .border(.red)
+                            .offset(y:200)
 
                             
                             VStack() {  // Content VStack ================
@@ -132,8 +138,8 @@ struct DeveloperView: View {
                                     Text("지누랑!")
                                         .font(.largeTitle)
                                         .fontWeight(.black)
-                                        .foregroundStyle(.regularMaterial)
-                                        .colorScheme(.dark)
+                                        .foregroundStyle(.thickMaterial)
+                                        .shadow(color: Color.black.opacity(0.2), radius: 6, x: 0, y: 0)
                                 }
                                 .padding(20)  // Padding의 적용 순서를 잘 생각해보자
                                 .frame(width: 160)  // Frame의 적용 순서도!
