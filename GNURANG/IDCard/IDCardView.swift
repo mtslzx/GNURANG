@@ -410,8 +410,8 @@ struct IDCardView: View {
                                         .padding(.vertical, 12)
                                     }
                                 }
-                                Button {  // Navigation Button - Account
-                                    print("navigation Account button")
+                                NavigationLink {  // Navigation Button - Account
+                                    RegisterView()
                                 } label: {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 10)

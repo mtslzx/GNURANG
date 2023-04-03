@@ -11,7 +11,8 @@ import SwiftUI
 struct GNURANG: App {
     var body: some Scene {
         WindowGroup {
-            SplashView()
+            // SplashView()
+            _ContentView()
         }
     }
 }

@@ -10,6 +10,14 @@
 		9608532529C4816A0053815E /* NoticeWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9608532429C4816A0053815E /* NoticeWidgetView.swift */; };
 		963D4D2629C886660036B05B /* Practice2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D4D2529C886650036B05B /* Practice2.swift */; };
 		963D4D2829C8B9E60036B05B /* DeveloperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963D4D2729C8B9E60036B05B /* DeveloperView.swift */; };
+		963F066229D702DF00981A42 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F066129D702DF00981A42 /* RegisterView.swift */; };
+		963F066429D7071700981A42 /* OnboardingTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F066329D7071700981A42 /* OnboardingTabView.swift */; };
+		963F066729D7073A00981A42 /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F066629D7073A00981A42 /* OnboardingPageView.swift */; };
+		963F066929D7074B00981A42 /* OnboardingLastPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F066829D7074B00981A42 /* OnboardingLastPageView.swift */; };
+		963F066B29D707CD00981A42 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F066A29D707CD00981A42 /* ContentView.swift */; };
+		963F066D29D70B6200981A42 /* OnboardingPage1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F066C29D70B6200981A42 /* OnboardingPage1View.swift */; };
+		963F066F29D7193A00981A42 /* OnboardingPage2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F066E29D7193A00981A42 /* OnboardingPage2View.swift */; };
+		963F067129D71C5C00981A42 /* OnboardingPage3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F067029D71C5C00981A42 /* OnboardingPage3View.swift */; };
 		965BBADF29C4A0B900DE1CF2 /* MealWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BBADE29C4A0B900DE1CF2 /* MealWidgetView.swift */; };
 		965BBAE129C4A37C00DE1CF2 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965BBAE029C4A37C00DE1CF2 /* Tab.swift */; };
 		967A668729C9D9890044E576 /* PassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A668629C9D9890044E576 /* PassView.swift */; };
@@ -40,6 +48,14 @@
 		9608532429C4816A0053815E /* NoticeWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoticeWidgetView.swift; sourceTree = "<group>"; };
 		963D4D2529C886650036B05B /* Practice2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Practice2.swift; sourceTree = "<group>"; };
 		963D4D2729C8B9E60036B05B /* DeveloperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperView.swift; sourceTree = "<group>"; };
+		963F066129D702DF00981A42 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		963F066329D7071700981A42 /* OnboardingTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingTabView.swift; sourceTree = "<group>"; };
+		963F066629D7073A00981A42 /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		963F066829D7074B00981A42 /* OnboardingLastPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingLastPageView.swift; sourceTree = "<group>"; };
+		963F066A29D707CD00981A42 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\U0010ContentView.swift"; sourceTree = "<group>"; };
+		963F066C29D70B6200981A42 /* OnboardingPage1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage1View.swift; sourceTree = "<group>"; };
+		963F066E29D7193A00981A42 /* OnboardingPage2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage2View.swift; sourceTree = "<group>"; };
+		963F067029D71C5C00981A42 /* OnboardingPage3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPage3View.swift; sourceTree = "<group>"; };
 		965BBADE29C4A0B900DE1CF2 /* MealWidgetView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MealWidgetView.swift; sourceTree = "<group>"; };
 		965BBAE029C4A37C00DE1CF2 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		967A668629C9D9890044E576 /* PassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassView.swift; sourceTree = "<group>"; };
@@ -89,6 +105,19 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		963F066529D7071D00981A42 /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				963F066329D7071700981A42 /* OnboardingTabView.swift */,
+				963F066629D7073A00981A42 /* OnboardingPageView.swift */,
+				963F066829D7074B00981A42 /* OnboardingLastPageView.swift */,
+				963F066C29D70B6200981A42 /* OnboardingPage1View.swift */,
+				963F066E29D7193A00981A42 /* OnboardingPage2View.swift */,
+				963F067029D71C5C00981A42 /* OnboardingPage3View.swift */,
+			);
+			path = OnboardingView;
+			sourceTree = "<group>";
+		};
 		96A7BF4929B5CB53006D3552 = {
 			isa = PBXGroup;
 			children = (
@@ -110,13 +139,13 @@
 			children = (
 				96FAF69A29D085D400A55227 /* GNURANG.entitlements */,
 				96A7BF5529B5CB53006D3552 /* GNURANG.swift */,
+				96A7BF5729B5CB53006D3552 /* SplashView.swift */,
 				96A7BF6529B5CCFF006D3552 /* MainTabView.swift */,
 				965BBAE029C4A37C00DE1CF2 /* Tab.swift */,
 				9608532329C481370053815E /* Home */,
 				96A7BF7229B6418A006D3552 /* GNUMapView.swift */,
 				96A7BF7029B64165006D3552 /* TimeTableView.swift */,
 				96FAF68829D069DF00A55227 /* IDCard */,
-				96A7BF5729B5CB53006D3552 /* SplashView.swift */,
 				96A7BF6C29B63E50006D3552 /* Widgets.swift */,
 				963D4D2729C8B9E60036B05B /* DeveloperView.swift */,
 				96FAF69429D081D900A55227 /* Model */,
@@ -126,6 +155,8 @@
 				967A668829C9DBB50044E576 /* Practice3.swift */,
 				96A7BF5929B5CB55006D3552 /* Assets.xcassets */,
 				96A7BF5B29B5CB55006D3552 /* Preview Content */,
+				963F066A29D707CD00981A42 /* ContentView.swift */,
+				963F066529D7071D00981A42 /* OnboardingView */,
 			);
 			path = GNURANG;
 			sourceTree = "<group>";
@@ -147,6 +178,7 @@
 				96FAF68929D069F500A55227 /* AccountView.swift */,
 				96FAF68B29D06A0E00A55227 /* Account.swift */,
 				96FAF68D29D077EE00A55227 /* LanguageSelectorView.swift */,
+				963F066129D702DF00981A42 /* RegisterView.swift */,
 			);
 			path = IDCard;
 			sourceTree = "<group>";
@@ -246,7 +278,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				96A7BF6A29B609B0006D3552 /* Practice.swift in Sources */,
+				963F066F29D7193A00981A42 /* OnboardingPage2View.swift in Sources */,
+				963F067129D71C5C00981A42 /* OnboardingPage3View.swift in Sources */,
 				96A7BF6429B5CCDE006D3552 /* SplashScreen.swift in Sources */,
+				963F066D29D70B6200981A42 /* OnboardingPage1View.swift in Sources */,
+				963F066929D7074B00981A42 /* OnboardingLastPageView.swift in Sources */,
 				96A7BF5829B5CB53006D3552 /* SplashView.swift in Sources */,
 				96A7BF5629B5CB53006D3552 /* GNURANG.swift in Sources */,
 				96A7BF6829B5D80B006D3552 /* MainView.swift in Sources */,
@@ -256,13 +292,17 @@
 				96FAF69029D07FC700A55227 /* APIConstants.swift in Sources */,
 				965BBAE129C4A37C00DE1CF2 /* Tab.swift in Sources */,
 				96A7BF6D29B63E51006D3552 /* Widgets.swift in Sources */,
+				963F066229D702DF00981A42 /* RegisterView.swift in Sources */,
 				96FAF68C29D06A0E00A55227 /* Account.swift in Sources */,
 				963D4D2629C886660036B05B /* Practice2.swift in Sources */,
 				96FAF69929D0821200A55227 /* GeneratePassModel.swift in Sources */,
+				963F066B29D707CD00981A42 /* ContentView.swift in Sources */,
+				963F066729D7073A00981A42 /* OnboardingPageView.swift in Sources */,
 				96FAF69629D081EF00A55227 /* LoginModel.swift in Sources */,
 				96FAF69329D0811600A55227 /* NetworkResult.swift in Sources */,
 				9608532529C4816A0053815E /* NoticeWidgetView.swift in Sources */,
 				967A668729C9D9890044E576 /* PassView.swift in Sources */,
+				963F066429D7071700981A42 /* OnboardingTabView.swift in Sources */,
 				965BBADF29C4A0B900DE1CF2 /* MealWidgetView.swift in Sources */,
 				963D4D2829C8B9E60036B05B /* DeveloperView.swift in Sources */,
 				96A7BF6629B5CCFF006D3552 /* MainTabView.swift in Sources */,
